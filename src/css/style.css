@@ -1,0 +1,42 @@
+#site {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.15fr 0.3fr 4fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas: 
+        "top-nav top-nav top-nav"
+        "content-nav content-nav content-nav";
+}
+#top-nav {
+    grid-area: top-nav;
+    background-color: yellow;
+}
+#left-nav {
+    background-color: red;
+}
+#center-nav{
+    background-color: blue;
+}
+#right-nav {
+    background-color: darkgrey;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-areas:
+        "reminders totals-bills"
+        "incoming-graph incoming-descriptions";
+    grid-gap: 1em 0.5em;
+}
+#reminders {
+    background-color: aqua;
+}
+#totals-bills {
+    background-color: blueviolet;
+}
+#incoming-graph {
+    background-color: brown;
+}
+#incoming-descriptions {
+    background-color: green;
+}

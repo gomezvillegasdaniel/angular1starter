@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="angular1starter">
+    <head>
+        <meta charset="UTF-8">
+        <title>Debitum</title>
+        <link rel="stylesheet" href="./cssDependencies/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="./css/style.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        
+        <div ng-controller="MainController as mCtrl" id="site">
+
+            <div id="top-nav">
+                top-nav
+                <h1>{{ greeting }}</h1>
+            </div>
+
+            <div id="left-nav" >
+                left-nav
+            </div>
+
+            <div id="center-nav" >
+                center-nav
+            </div>
+
+            <div id="right-nav">
+                right-nav
+            </div>
+            
+        </div>
+        
+        <script src="./jsDependencies/jquery.min.js"></script>
+        <script src="./jsDependencies/bootstrap.min.js"></script>
+        <script src="./jsDependencies/angular.min.js"></script>
+        <script src="./bundle.js"></script>
+    </body>
+</html>
